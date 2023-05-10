@@ -30,4 +30,4 @@ for example, ```python3 main.py -e Google -q  "wild cat" "canine dog" -n 10```
 ```
 python3 main_dataset.py -s <image size> -d <dataset dir path>
 ```
-for example, ```python3 -s 300``` will generate '300 x 300' size images into 'Data' directory.
+for example, ```python3 main_dataset -s 300``` will generate '300 x 300' size images into 'Data' directory.
