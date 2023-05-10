@@ -11,7 +11,7 @@ import argparse
 def get_parser():
     parser = argparse.ArgumentParser(description="PyImgDownloader")
     # configs
-    parser.add_argument('-e', '--engine', default='google', choices=['Google', 'Bing', 'DuckDuckGo'],
+    parser.add_argument('-e', '--engine', default='Google', choices=['Google', 'Bing', 'DuckDuckGo'],
                         help='search engine from where images will be downloaded.')
     parser.add_argument('-q', '--query', nargs='+', type=str, default=['mango', 'banana'], 
                         help='search terms to be searched in the engine.')

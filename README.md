@@ -1,7 +1,7 @@
 # PyImgDownloader
 This library allows users to download images from various search engines, such as Google, Bing, and DuckDuckGo. It helps in building custom image dataset for to design different machine learning algorithms.
 
-### How to run?
+### How to download images?
 - Clone the repository.
 ```
 git clone https://github.com/fayjie92/PyImgDownloader
@@ -24,3 +24,10 @@ python3 main.py -e <search engine: Google| Bing | DuckDuckGo> -q <"Search Term 1
 ```
 for example, ```python3 main.py -e Google -q  "wild cat" "canine dog" -n 10```
 
+
+### How to generate image dataset?
+- Run the 'main_dataset.py' to generate images of same size.
+```
+python3 main_dataset.py -s <image size> -d <dataset dir path>
+```
+for example, ```python3 -s 300``` will generate '300 x 300' size images into 'Data' directory.
