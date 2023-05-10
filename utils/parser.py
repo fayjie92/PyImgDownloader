@@ -21,3 +21,16 @@ def get_parser():
                         help='logging: True/False')
      
     return parser.parse_args()
+
+
+def dataset_parser():
+    parser = argparse.ArgumentParser(description="Generate Dataset from Images")
+    # configs
+    parser.add_argument('-s', '--image_size', type=int, default='224',
+                        help='image resize "size," (for example: 224)')
+    parser.add_argument('-d', '--dataset_dir', nargs='+', type=str, default='./Data', 
+                        help='Dataset directory to store image dataset')
+    parser.add_argument('-l', '--log', default=False, action=argparse.BooleanOptionalAction, 
+                        help='logging: True/False')
+    
+    return parser.parse_args()

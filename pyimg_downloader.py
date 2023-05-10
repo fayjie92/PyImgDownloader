@@ -17,7 +17,6 @@ import DuckDuckGoImages as ddg  # duckduckgo
 from utils.logger import create_logger, logger_as_print
 
 
-
 class PyImgDownloader():
     def __init__(self, 
                  search_engine, 

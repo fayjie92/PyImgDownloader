@@ -10,8 +10,6 @@ import os
 from pyimg_downloader import PyImgDownloader
 from utils.parser import get_parser
 
-
-
 if __name__ == '__main__':
     args = get_parser()
 
